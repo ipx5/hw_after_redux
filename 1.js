@@ -11,7 +11,9 @@ function getFrequency(s,n) {
                 freq[char]= 1 ;
             } 
         }
-        return freq["a"];
+        if(!!freq["a"])
+            return freq["a"];
+        else return 0;
 }
  
 console.log(getFrequency('aba', 10))
